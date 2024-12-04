@@ -15,7 +15,7 @@ import Link from "next/link";
 import { Separator } from "./ui/separator";
 
 const Cart = () => {
-  const itemCount = 0;
+  const itemCount = 1;
   const fee = 1;
   return (
     <Sheet>
@@ -30,13 +30,13 @@ const Cart = () => {
       </SheetTrigger>
       <SheetContent className="flex w-full flex-col pr-0 sm:max-w-lg">
         <SheetHeader className="space-y-2.5 pr-6 ">
-          <SheetTitle>Cart (0)</SheetTitle>
+          <SheetTitle>Cart ({itemCount})</SheetTitle>
         </SheetHeader>
         {itemCount > 0 ? (
           <>
             <div className="flex w-full flex-col pr-6">
               {/* TODO : Cart logic */}
-              cart items
+              Cart Items
             </div>
             <div className="space-y-4 pr-6">
               <Separator />
